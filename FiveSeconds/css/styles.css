@@ -1,0 +1,47 @@
+.container {
+    font-family: 'Courier Ner',sans-serif;
+    width: 300px;
+    margin:30px auto 0;
+    text-align: center;
+    font-weight:bold;
+}
+
+#target,#result {
+    font-size: 32px;
+    margin-bottom: 15px;
+    background: #ccc;
+    height: 60px;
+    line-height: 60px;
+}
+
+#result.standby {
+    opacity: 0.5;
+}
+
+#result.perfect {
+    background: #FA5858;
+    color: #fff;
+}
+
+#start {
+    float:left;
+}
+
+#stop {
+    float:right;
+}
+
+#start,#stop {
+    cursor:pointer;
+    font-size:18px;
+    width:145px;
+    background: #eee;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: 0 6px 0 #ccc;
+}
+
+#start.pushed, #stop.pushed {
+    margin-top: 3px;
+    box-shadow: 0 3px 0 #ccc;
+}
