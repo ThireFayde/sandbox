@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TimelineJS Embed</title>
+<meta charset="utf-8">
+<meta name="description" content="TimelineJS Embed">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="icon" type="image/png" href="https://cdn.knightlab.com/libs/purpleline/latest/img/favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
+<base target="_blank">
+
+<!-- Style-->
+<style>
+html, body {
+    width: 100%;
+    height:100%;
+    padding: 0px;
+    margin: 0px;
+}
+    body{
+        background:url(img/syabupango.jpg) center center ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    body > div{
+        position: fixed;
+        width: 100%;
+        background-color:#fff;
+        text-align: right;
+        border-top:#ccc solid 1px;
+        transition: all 300ms 0s ease;
+    }
+    .close{
+        bottom:-500px;
+    }
+        .open{
+        bottom:0;
+    }
+    i {
+        margin-right: 10px
+    }
+#timeline-embed {
+    height: 100%;
+}
+</style>
+<!-- HTML5 shim, for IE6-8 support of HTML elements--><!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+</html>
+<body>
+<div id="navi" class="close">
+    <i class="fas fa-bars btn-gnavi" style="font-size: 50px"></i>
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1bC3h6yUztgJjIT52pP_YMq9XScd0ELeM75gtjSLaNro&font=Default&lang=ja&initial_zoom=2&height=500' width='100%' height='500' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/index.js"></script>
+</div>
+</body>
+</html>
