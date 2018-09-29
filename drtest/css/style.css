@@ -1,0 +1,49 @@
+html, body {
+    width: 100%;
+    height:100%;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background:url(../img/syabupango.jpg) center center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+body > div#navi{
+    position: fixed;
+    width: 100%;
+    background-color:#fff;
+    text-align: right;
+    border-top:#ccc solid 1px;
+    transition: all 300ms 0s ease;
+}
+.close{
+    bottom:-500px;
+}
+    .open{
+    bottom:0;
+}
+#navi > i {
+    margin-right: 10px
+}
+.tl-full-color-background {
+    background-color:rgba(255,255,255,0.7);
+}
+#timeline-embed {
+    height: 100%;
+}
+
+#loading{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    z-index: 999;
+}
+#video{
+
+}

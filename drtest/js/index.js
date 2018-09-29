@@ -17,3 +17,14 @@ $(function(){
 		}, 200);
 	});
 });
+$(function(){
+	setTimeout('stopload()',200);
+  });
+   
+  function stopload(){
+	$('#loading').delay(400).fadeOut(400);
+  }
+
+// $(window).load(function(){
+// 	$('#loading').fadeOut(400, function(){ $(this).remove(); });
+// });
