@@ -22,7 +22,9 @@ $(function(){
   });
    
   function stopload(){
-	$('#loading').fadeOut(400);
+	$('#loading').fadeOut(400)
+	$('#load').css('display','none')
+	;
   }
 
 // $(window).load(function(){
