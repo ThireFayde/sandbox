@@ -22,7 +22,7 @@ $(function(){
   });
    
   function stopload(){
-	$('#loading').delay(800).fadeOut(400);
+	$('#loading').delay(1000).fadeOut(400);
   }
 
 // $(window).load(function(){
