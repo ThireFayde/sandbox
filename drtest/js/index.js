@@ -18,7 +18,7 @@ $(function(){
 	});
 });
 $(function(){
-	setTimeout('stopload()',4000);
+	setTimeout('stopload()',2000);
   });
    
   function stopload(){
