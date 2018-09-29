@@ -18,11 +18,11 @@ $(function(){
 	});
 });
 $(function(){
-	setTimeout('stopload()',200);
+	setTimeout('stopload()',4000);
   });
    
   function stopload(){
-	$('#loading').delay(1000).fadeOut(400);
+	$('#loading').fadeOut(400);
   }
 
 // $(window).load(function(){
