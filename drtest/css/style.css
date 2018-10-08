@@ -36,6 +36,8 @@ body > div#navi{
 
 #loading{
     position: fixed;
+    top:0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +46,37 @@ body > div#navi{
     background:#000;
     z-index: 999;
 }
-#video{
+#topWrap{
+    width: auto;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s;
+}
+.meibo{
+    color:#fff;
+    font-size:2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:10px;
+    width:200px;
+    height: 250px;
+    background-color:blue;
+    margin-right:20px;
+    margin-bottom:10px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+}
+.meibo:hover{
+    background-color:red;
+}
 
+.slow {
+    transition: 1s
+}
+.slowE {
+    transition: 1s ease-in
+}
+
+.veryslow{
+    transition: 4s;
 }
