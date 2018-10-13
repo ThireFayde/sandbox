@@ -1,10 +1,29 @@
+*{
+    list-style: none;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:#999;
+    transition: 0.5s
+}
+
+a:hover {
+    color:#333;
+}
+
+#memberList h1,#memberList h2 {
+    color:#333;
+}
+
 html, body {
     width: 100%;
     height:100%;
     padding: 0px;
     margin: 0px;
 }
-body{
+body#top{
     background:url(../img/syabupango.jpg) center center ;
     background-size: contain;
     background-repeat: no-repeat;
@@ -46,28 +65,36 @@ body > div#navi{
     background:#000;
     z-index: 999;
 }
-#topWrap{
-    width: auto;
-    margin: 30px;
+
+#memberList section {
+    width: 830px;
+    margin: 0 auto;
+}
+#listWrap{
     display: flex;
+    /* justify-content:space-between; */
     flex-wrap: wrap;
     transition: 1s;
 }
-.meibo{
+.memberlist{
+    position: relative;
     color:#fff;
     font-size:2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding:10px;
-    width:200px;
-    height: 250px;
-    background-color:blue;
+    width:150px;
+    height: 200px;
+    margin-bottom:20px;
     margin-right:20px;
-    margin-bottom:10px;
     border: 1px solid #666;
     box-sizing: border-box;
 }
-.meibo:hover{
-    background-color:red;
+
+#listWrap > div:nth-child(5n){
+    margin-right:0;
+}
+
+.memberlist:hover{
+    /* background-color:red; */
 }
 
 .slow {
@@ -79,4 +106,32 @@ body > div#navi{
 
 .veryslow{
     transition: 4s;
+}
+
+header {
+    width:90%;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content:space-between;
+    margin: 0 auto;
+}
+
+header > div {
+    display: flex;
+    align-items:center;
+}
+
+header ul {
+    display: flex;
+}
+
+.opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+.opacity:hover{
+    opacity: 0;
 }
