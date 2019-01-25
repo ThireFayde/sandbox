@@ -1,0 +1,108 @@
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background:url(syabupango.jpg) no-repeat center top;
+    background-size: 500px;
+}
+
+div#app{
+    background:#000;
+    animation:hide 3.3s both;
+    height: 100vh;
+}
+
+div#app .hide {
+    display: none;
+}
+
+ul{
+
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    height: 100vh;
+    animation:close 3s both;
+}
+
+li{
+    width:5px;
+    animation:show linear 1s both;
+}
+
+div#app > ul > div:first-child {
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 100vh;
+    background:#fff;
+    animation:whiteLine 3.3s both;
+}
+
+div#app > ul > div:last-child {
+    position: absolute;
+    right: 0;
+    width: 5px;
+    height: 100vh;
+    background:#fff;
+    animation:whiteLine 3.3s both;
+}
+
+/* ul.start li {
+    height: 100vh;
+    animation:show 1s both;
+} */
+
+@keyframes show {
+	0% {
+		height: 0vh;
+	}
+	100% {
+        height: 100vh;
+    }
+}
+@keyframes close {
+    60% {
+        width:100%;
+    }
+    80% {
+        width:8px;
+    }
+    90% {
+        width:8px;
+    }
+    100% {
+        width:100%;
+    }
+}
+
+@keyframes whiteLine {
+    /* 0% {
+        height: 0;
+        width: 5px;
+    } */
+    40% {
+        height: 100vh;
+    }
+    75% {
+        width: 5px;
+    }
+    90% {
+        width:100%;
+    }
+    100% {
+        width:100%;
+    }
+}
+
+@keyframes hide {
+    90%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
