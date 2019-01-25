@@ -14,7 +14,7 @@ const app = new Vue({
         ]
     },
     created: function(){
-        this.lineNumber = Math.ceil(this.windowWidth / 5);
+        this.lineNumber = Math.floor(this.windowWidth / 5);
         let wrapElement = document.getElementById('app');
         let targetElement = wrapElement.firstElementChild;
         for(i=this.lineNumber;i>=0;i--){
