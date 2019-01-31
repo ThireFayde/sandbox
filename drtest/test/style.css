@@ -8,10 +8,12 @@ html{
     overflow-y:scroll; 
 }
 
+/*
 body {
     background:url(syabupango.jpg) no-repeat center top;
     background-size: 500px;
 }
+*/
 
 div#app{
     background:#000;
